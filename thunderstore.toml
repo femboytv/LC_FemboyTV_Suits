@@ -1,0 +1,31 @@
+[config]
+schemaVersion = "0.0.1"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./BepInEx"
+target = "./BepInEx"
+
+[package]
+namespace = "femboytv"
+name = "FemboyTV_Suits"
+versionNumber = "3.0.0"
+description = "Suits for the best femboy modpack :3"
+websiteUrl = "https://femboy.tv"
+containsNsfwContent = false
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "lethal-company", ]
+
+[publish.categories]
+lethal-company = [ "bepinex", "modpacks", ]
+
+[package.dependencies]
+# The main lib
+x753-More_Suits = "1.4.1"
+# Suit packs
